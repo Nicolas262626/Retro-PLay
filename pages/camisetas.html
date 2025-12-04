@@ -10,11 +10,13 @@
 
     <!-- Tu CSS -->
     <link rel="stylesheet" href="../styles/styles.css">
+
 </head>
 <body>
 
 <!-- NAVBAR BOOTSTRAP -->
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+ <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
   <a class="navbar-brand" href="../index.html">
       <h1 class="m-0 fs-3">Retro Play</h1>
   </a>
@@ -50,6 +52,7 @@
       </ul>
   </div>
 </nav>
+</header>
 
 <!-- CONTENIDO -->
 <main class="container my-5">
@@ -130,28 +133,46 @@
         </div>
 
     </div>
+    <footer>
+    <h2>Retro Play</h2>
+    <ul class="menu-footer">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./camisetas.html">Camisetas</a></li>
+        <li><a href="./botines.html">Botines</a></li>
+        <li><a href="./accesorios.html">Accesorios</a></li>
+        <li><a href="./soporte.html">Soporte</a></li>
+    </ul>
 
-    <!-- Redes Sociales -->
-    <section class="text-center mt-5">
-        <h2>Redes Sociales</h2>
+    <div>
+        <form action="">
+            <label for="emailRetroplay">Déjanos tu correo...</label>
+            <input type="email" id="emailRetroplay">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</footer>
 
-        <div class="d-flex justify-content-center gap-5 mt-4">
-            <article>
-                <img src="../assets/instagram.png" width="70" alt="">
-                <p>@RetroPlay</p>
-            </article>
+<section class="redes">
+    <h2>Redes Sociales</h2>
 
-            <article>
-                <img src="../assets/tik-tok.png" width="70" alt="">
-                <p>@Retro-Play</p>
-            </article>
+    <div class="iconos-redes">
+        <article>
+            <img src="../assets/instagram.png">
+            <h3>@RetroPlay</h3>
+        </article>
 
-            <article>
-                <img src="../assets/whatsapp.png" width="70" alt="">
-                <p>+57 3216549870</p>
-            </article>
-        </div>
-    </section>
+        <article>
+            <img src="../assets/whatsapp.png">
+            <h3>+57 3216549870</h3>
+        </article>
+
+        <article>
+            <img src="../assets/tik-tok.png">
+            <h3>@Retro-Play</h3>
+        </article>
+    </div>
+</section>
+
 
 </main>
 
@@ -160,4 +181,4 @@
 </body>
 </html>
 
-</html>
+

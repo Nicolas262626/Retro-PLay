@@ -1,148 +1,205 @@
-
-/* --------------------------
-     AJUSTES GENERALES
---------------------------- */
-body {
+/* =====================================
+   AJUSTES GENERALES
+===================================== */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
 
-/* --------------------------
-     MENÚ RESPONSIVO
---------------------------- */
-header {
-    padding: 10px;
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* evita scroll lateral */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+/* =====================================
+   NAVBAR (Bootstrap)
+===================================== */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* =====================================
+   SECCIONES GENERALES
+===================================== */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   QUIÉNES SOMOS (INDEX)
+===================================== */
+.quienes-somos {
+    text-align: center;
+}
+
+.quienes-somos img {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.quienes-somos p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =====================================
+   TARJETAS (INDEX, CAMISETAS, BOTINES)
+===================================== */
+.card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* =====================================
+   GRID DE PRODUCTOS (CAMISETAS Y BOTINES)
+===================================== */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+footer {
     background: #111;
     color: white;
+    padding: 35px 20px;
     text-align: center;
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 0;
+footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
 }
 
-.menu li {
+.menu-footer {
     list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.menu a {
-    text-decoration: none;
+.menu-footer li {
+    margin: 6px 0;
+}
+
+.menu-footer a {
     color: white;
-    padding: 6px 10px;
-    display: block;
+    text-decoration: none;
 }
 
-/* --------------------------
-     SECCIONES
---------------------------- */
-main {
-    padding: 15px;
+.menu-footer a:hover {
+    text-decoration: underline;
 }
 
-/* TITULOS */
-h2, h3 {
-    text-align: center;
-}
-
-/* --------------------------
-     PRODUCTOS (GRID)
---------------------------- */
-.productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.producto {
-    text-align: center;
-    background: #f1f1f1;
-    padding: 12px;
-    border-radius: 10px;
-}
-
-.producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* --------------------------
-     FORMULARIO (SOPORTE)
---------------------------- */
-.formulario-soporte {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.formulario-soporte form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.formulario-soporte input {
-    width: 80%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    outline: none;
-}
-
-.formulario-soporte button {
-    padding: 10px 20px;
-    border-radius: 10px;
+/* Newsletter */
+footer input[type="email"] {
+    padding: 10px;
+    border-radius: 6px;
     border: none;
-    background: black;
+    width: 240px;
+    max-width: 85%;
+}
+
+footer input[type="submit"] {
+    padding: 10px 20px;
+    background: #0d6efd;
+    border: none;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
 }
 
-/* --------------------------
-     REDES SOCIALES
---------------------------- */
-.redes-sociales .iconos-redes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+footer input[type="submit"]:hover {
+    background: #0b5ed7;
 }
 
-.iconos-redes article {
+/* =====================================
+   REDES SOCIALES
+===================================== */
+.redes {
     text-align: center;
 }
 
-/* ========================================
-        RESPONSIVE (TELEFONOS)
-======================================== */
+.iconos-redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.iconos-redes img {
+    width: 45px;
+}
+
+.iconos-redes h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
 @media (max-width: 768px) {
 
-    .productos {
-        grid-template-columns: repeat(2, 1fr);
+    .quienes-somos img {
+        width: 170px;
     }
 
-    header h1 {
-        font-size: 1.5rem;
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 480px) {
 
-    .productos {
+    .grid-productos {
         grid-template-columns: 1fr;
     }
 
-    .menu {
-        flex-direction: column;
+    .iconos-redes {
+        gap: 25px;
     }
 
-    .formulario-soporte input {
-        width: 95%;
+    footer input[type="email"] {
+        width: 90%;
     }
 }
