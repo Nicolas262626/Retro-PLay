@@ -1,0 +1,33 @@
+// Flexbox centrado
+@mixin flex-center($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+// Responsive
+@mixin respond($size) {
+  @if $size == mobile {
+    @media (max-width: $mobile) { @content; }
+  }
+  @else if $size == tablet {
+    @media (max-width: $tablet) { @content; }
+  }
+}
+
+// Botón reutilizable
+@mixin button($bg) {
+  background: $bg;
+  color: white;
+  border: none;
+  border-radius: $radius-sm;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    opacity: .9;
+  }
+}
