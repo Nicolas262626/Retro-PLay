@@ -5,58 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Play - Soporte</title>
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- CSS propio -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
+
 <body>
 
-<!-- ========== NAVBAR BOOTSTRAP UNIFICADA ========== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">RetroPlay</a>
+<!-- ================= HEADER ================= -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+        <a class="navbar-brand" href="../index.html">
+            <h1 class="m-0 fs-3">Retro Play</h1>
+        </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="./camisetas.html">Camisetas</a></li>
-                <li class="nav-item"><a class="nav-link" href="./botines.html">Botines</a></li>
-                <li class="nav-item"><a class="nav-link" href="./accesorios.html">Accesorios</a></li>
-                <li class="nav-item"><a class="nav-link active" href="./soporte.html">Soporte</a></li>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./camisetas.html">Camisetas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./botines.html">Botines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./accesorios.html">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./soporte.html">Soporte</a>
+                </li>
             </ul>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
-<!-- ========== CONTENIDO PRINCIPAL ========== -->
-<main class="container py-4">
+<!-- ================= MAIN ================= -->
+<main class="container my-5">
 
-    <section class="text-center">
-        <h2 class="mb-3">Soporte</h2>
-        <p>
-            En <strong>RetroPlay</strong> estamos comprometidos con ofrecerte la mejor experiencia de compra.  
+    <section class="text-center mb-5">
+        <h2>Soporte</h2>
+        <p class="col-12 col-md-8 mx-auto">
+            En <strong>RetroPlay</strong> estamos comprometidos con ofrecerte la mejor experiencia de compra.
             Si tienes dudas, necesitas ayuda con un pedido o quieres más información, ¡estamos aquí para ti!
         </p>
-        <p>
-            Escríbenos tus inquietudes sobre envíos, devoluciones, pagos o disponibilidad.  
-            Te responderemos lo más pronto posible.
+        <p class="col-12 col-md-8 mx-auto">
+            Escríbenos tus inquietudes sobre envíos, devoluciones, métodos de pago
+            o disponibilidad de productos.
         </p>
     </section>
 
-    <!-- FORMULARIO DE SOPORTE -->
-    <section class="mt-4">
-        <h3 class="text-center mb-3">Déjanos tu mensaje</h3>
+    <!-- FORMULARIO -->
+    <section>
+        <h3 class="text-center mb-4">Déjanos tu mensaje</h3>
 
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">
                 <form class="card p-4 shadow-sm">
-                    <textarea class="form-control mb-3" rows="5" placeholder="Escribe tus peticiones, quejas o reclamos..." required></textarea>
-                    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+
+                    <div class="mb-3">
+                        <label for="mensajeSoporte" class="form-label">
+                            Mensaje
+                        </label>
+                        <textarea
+                            id="mensajeSoporte"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Escribe tus peticiones, quejas o reclamos"
+                            required>
+                        </textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Enviar
+                    </button>
                 </form>
             </div>
         </div>
@@ -64,20 +94,29 @@
 
 </main>
 
-<!-- REDES SOCIALES -->
-<section class="redes-sociales text-center py-4">
+<!-- ================= REDES ================= -->
+<section class="redes text-center my-5">
     <h2>Redes Sociales</h2>
 
-    <div class="iconos-redes d-flex justify-content-center gap-4 mt-3">
-        <div><img src="../assets/instagram.png" width="45"><p>@RetroPlay</p></div>
-        <div><img src="../assets/tik-tok.png" width="45"><p>@Retro-Play</p></div>
-        <div><img src="../assets/whatsapp.png" width="45"><p>+57 3216549870</p></div>
+    <div class="d-flex justify-content-center gap-5 mt-3 flex-wrap">
+        <article>
+            <img src="../assets/instagram.png" alt="Instagram" width="45">
+            <p>@RetroPlay</p>
+        </article>
+
+        <article>
+            <img src="../assets/tik-tok.png" alt="TikTok" width="45">
+            <p>@Retro-Play</p>
+        </article>
+
+        <article>
+            <img src="../assets/whatsapp.png" alt="WhatsApp" width="45">
+            <p>+57 3216549870</p>
+        </article>
     </div>
 </section>
 
-<!-- BOOTSTRAP SCRIPT -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
