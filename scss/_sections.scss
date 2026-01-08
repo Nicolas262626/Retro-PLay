@@ -1,0 +1,10 @@
+section {
+  padding: $space-lg $space-md;
+}
+
+// BUCLE SASS
+@for $i from 1 through 4 {
+  .mt-#{$i} {
+    margin-top: $i * 10px;
+  }
+}
