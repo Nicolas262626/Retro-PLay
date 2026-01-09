@@ -1,15 +1,8 @@
-// Mixin para flexbox centrado
-@mixin flex-center($direction: row) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: center;
-  align-items: center;
+// scss/abstracts/_mixins.scss
+@mixin card-animation {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Suavizado
+  &:hover {
+    transform: translateY(-10px); // Elevación responsiva
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
 }
-
-// Mixin para transición suave
-@mixin transition($time: 0.3s) {
-  transition: all $time ease-in-out;
-}
-
-
-

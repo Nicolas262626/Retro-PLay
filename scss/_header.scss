@@ -1,4 +1,14 @@
+// scss/_header.scss
 header {
-  background-color: $color-primario;
+  .navbar {
+    background: linear-gradient(-45deg, #1a1a1a, #333333, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite; // Animación obligatoria
+  }
 }
 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,19 +1,13 @@
-/* ===== COLORES PRINCIPALES ===== */
-$color-primario: #5500ff;
-$color-secundario: #260101;
-$color-detalle: #f27244;
-$color-borde: #f2dabd;
+$color-principal: #1a1a1a; 
+$color-acento: #d4af37;
+$color-blanco: #ffffff;
 
-/* ===== LISTA DE COLORES ===== */
-$colores: green, blue, red, pink, white;
-
-/* ===== MAPA DE COLORES ===== */
-$colores-map: (
-  primario: #5500ff,
-  secundario: #260101,
-  detalle: #f27244
+// Mapa para Bucle (Requisito: Bucle @each)
+$status-colors: (
+  "promo": #e74c3c,
+  "nuevo": #2ecc71,
+  "exclusivo": #f39c12
 );
 
-
-
-
+// Animación de Gradiente
+$gradiente-retro: linear-gradient(-45deg, #1a1a1a, #333333, #1a1a1a, #444444);

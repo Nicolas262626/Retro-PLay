@@ -1,24 +1,44 @@
-/* ===== COLORES PRINCIPALES ===== */
-/* ===== LISTA DE COLORES ===== */
-/* ===== MAPA DE COLORES ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  background-color: #5500ff;
+header .navbar {
+  background: linear-gradient(-45deg, #1a1a1a, #333333, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
 }
 
-section {
-  padding: 2rem;
-  background-color: white;
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.product-card .img-container {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.product-card .img-container img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #260101;
+  font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+  overflow-x: hidden;
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

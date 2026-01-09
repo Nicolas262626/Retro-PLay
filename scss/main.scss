@@ -1,10 +1,18 @@
-@import "variables";
-@import "abstracts/mixins";
-@import "reset";
-@import "header";
-@import "sections";
+// 1. Configuraciones Globales
+@use "variables" as vars;
+@use "abstracts/mixins" as mix;
 
+// 2. Estilos Base
+@use "reset";
+
+// 3. Componentes
+@use "header"; // Ya no necesitas el bloque 'with' si el header usa @use interno
+@use "sections";
+
+// Estilos Generales Responsivos (Requisito: Mobile-First)
 body {
-  font-family: Arial, sans-serif;
-  color: $color-secundario;
+    font-family: 'Roboto', sans-serif;
+    color: vars.$color-principal;
+    overflow-x: hidden; // Evita scrolleo lateral
+    background-color: #fff;
 }
