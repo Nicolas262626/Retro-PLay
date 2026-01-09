@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/main.scss","../scss/abstracts/_mixins.scss","../scss/_reset.scss","../scss/_header.scss","../scss/_sections.scss"],"names":[],"mappings":"AAAA;ACAA;ACAA;EACE;EACA;EACA;;;ACHF;AAIE;EACE;EACA;EACA;EACA;;;AAKJ;EACE;IAAK;;EACL;IAAM;;EACN;IAAO;;;AHhBT;AIAA;AAKE;EHFA","file":"main.css"}

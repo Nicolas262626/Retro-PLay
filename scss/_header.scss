@@ -1,13 +1,17 @@
-// scss/_header.scss
+/* scss/_header.scss */
+@use "variables" as vars;
+
 header {
   .navbar {
-    background: linear-gradient(-45deg, #1a1a1a, #333333, #1a1a1a);
+    background: vars.$gradiente-retro !important;
     background-size: 400% 400%;
-    animation: gradientMove 8s ease infinite; // Animación obligatoria
+    animation: moveGradient 12s ease infinite; // Animación de fondo fluida
+    border-bottom: 2px solid vars.$color-acento;
   }
 }
 
-@keyframes gradientMove {
+// Definición de los fotogramas clave
+@keyframes moveGradient {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }

@@ -1,8 +1,13 @@
-// scss/abstracts/_mixins.scss
-@mixin card-animation {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; // Suavizado
+/* scss/abstracts/_mixins.scss */
+
+@mixin transition($time: 0.3s) {
+  transition: all $time ease-in-out;
+}
+
+@mixin card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   &:hover {
-    transform: translateY(-10px); // Elevación responsiva
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   }
 }

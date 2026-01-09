@@ -1,18 +1,6 @@
-// 1. Configuraciones Globales
+/* scss/main.scss */
 @use "variables" as vars;
 @use "abstracts/mixins" as mix;
-
-// 2. Estilos Base
 @use "reset";
-
-// 3. Componentes
-@use "header"; // Ya no necesitas el bloque 'with' si el header usa @use interno
+@use "header";
 @use "sections";
-
-// Estilos Generales Responsivos (Requisito: Mobile-First)
-body {
-    font-family: 'Roboto', sans-serif;
-    color: vars.$color-principal;
-    overflow-x: hidden; // Evita scrolleo lateral
-    background-color: #fff;
-}
