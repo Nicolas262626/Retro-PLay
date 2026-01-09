@@ -1,0 +1,10 @@
+@import "variables";
+@import "abstracts/mixins";
+@import "reset";
+@import "header";
+@import "sections";
+
+body {
+  font-family: Arial, sans-serif;
+  color: $color-secundario;
+}

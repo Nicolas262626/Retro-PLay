@@ -1,0 +1,24 @@
+/* ===== COLORES PRINCIPALES ===== */
+/* ===== LISTA DE COLORES ===== */
+/* ===== MAPA DE COLORES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #5500ff;
+}
+
+section {
+  padding: 2rem;
+  background-color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #260101;
+}
+
+/*# sourceMappingURL=main.css.map */

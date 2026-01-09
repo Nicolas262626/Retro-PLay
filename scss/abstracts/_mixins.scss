@@ -1,0 +1,15 @@
+// Mixin para flexbox centrado
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para transición suave
+@mixin transition($time: 0.3s) {
+  transition: all $time ease-in-out;
+}
+
+
+
