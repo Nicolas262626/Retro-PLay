@@ -1,0 +1,178 @@
+/* =====================================
+   RESET Y AJUSTES GENERALES
+===================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* =====================================
+   NAVBAR (Bootstrap)
+===================================== */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+/* =====================================
+   SECCIONES GENERALES
+===================================== */
+section {
+    padding: 40px 20px;
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* =====================================
+   QUIÉNES SOMOS (INDEX)
+===================================== */
+.quienes-somos {
+    text-align: center;
+}
+
+.quienes-somos img {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.quienes-somos p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =====================================
+   PRODUCTOS / TARJETAS
+===================================== */
+.producto img,
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.producto h4,
+.card h4 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.producto p,
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* =====================================
+   GRID DE PRODUCTOS (si no se usa Bootstrap)
+===================================== */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* =====================================
+   FORMULARIOS (SOPORTE)
+===================================== */
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form textarea,
+form input {
+    font-size: 1rem;
+}
+
+/* =====================================
+   REDES SOCIALES
+===================================== */
+.redes-sociales {
+    background-color: #ffffff;
+}
+
+.iconos-redes article {
+    text-align: center;
+}
+
+.iconos-redes img {
+    width: 45px;
+    margin-bottom: 5px;
+}
+
+.iconos-redes p {
+    font-size: 0.95rem;
+}
+
+/* =====================================
+   FOOTER (si lo usás en index)
+===================================== */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+@media (max-width: 768px) {
+
+    .quienes-somos img {
+        width: 180px;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
+    }
+
+    main h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .iconos-redes {
+        gap: 20px;
+    }
+}
