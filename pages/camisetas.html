@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Play | Camisetas</title>
+    <title>Retro Play | Camisetas de Leyenda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
 <header class="main-header">
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
@@ -20,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav gap-lg-3">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="./camisetas.html">Camisetas</a></li>
                     <li class="nav-item"><a class="nav-link" href="./botines.html">Botines</a></li>
@@ -33,60 +33,93 @@
 </header>
 
 <main class="container my-5">
-    <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold">Camisetas Retro</h2>
-        <p class="lead text-muted col-md-8 mx-auto">Calidad 100% original, respetando los diseños clásicos y detalles auténticos de cada época.</p>
-    </div>
+    <section class="row align-items-center mb-5">
+        <div class="col-lg-6">
+            <h2 class="display-4 fw-bold">Camisetas Retro</h2>
+            <p class="lead text-muted">Réplicas de alta fidelidad que respetan cada costura, escudo y detalle de las épocas más gloriosas del fútbol mundial.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+            <div class="bg-light p-3 rounded-4 d-inline-block shadow-sm">
+                <p class="small fw-bold mb-1 text-uppercase text-muted">Filtrar por Época</p>
+                <div class="btn-group">
+                    <button class="btn btn-dark btn-sm">80s</button>
+                    <button class="btn btn-outline-dark btn-sm">90s</button>
+                    <button class="btn btn-outline-dark btn-sm">00s</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="mb-5">
-        <h3 class="text-center mb-4 border-bottom pb-2">Selecciones Nacionales</h3>
-        <div class="row g-4">
-            <article class="col-12 col-md-4">
-                <div class="card product-card border-0 shadow-sm h-100">
-                    <img src="../assets/camisetaretroalemania.jpeg" class="card-img-top" alt="Alemania">
-                    <div class="card-body text-center">
-                        <h4 class="fs-5 fw-bold">Alemania</h4>
-                        <p class="text-primary fw-bold">$100 USD</p>
-                        <button class="btn btn-buy w-100">Comprar</button>
+    <section class="row g-4 mb-5">
+        <div class="col-lg-8">
+            <article class="card product-card border-0 shadow-lg overflow-hidden h-100 flex-md-row">
+                <div class="img-container bg-light w-md-50 d-flex align-items-center justify-content-center p-5">
+                    <img src="../assets/camisetaretroargentinamaradona.jpg" class="img-fluid" alt="Argentina 86" style="max-height: 350px; object-fit: contain;">
+                </div>
+                <div class="card-body w-md-50 p-5 d-flex flex-column justify-content-center">
+                    <span class="badge bg-primary mb-2 w-fit">MÁS BUSCADA</span>
+                    <h3 class="display-6 fw-bold">Argentina 1986</h3>
+                    <p class="text-muted">La edición "Le Coq Sportif" que Diego Armando Maradona inmortalizó en el Estadio Azteca. Tejido microperforado y escudo bordado.</p>
+                    <div class="mt-auto">
+                        <p class="fs-2 fw-bold text-primary mb-3">$140 USD</p>
+                        <button class="btn btn-dark btn-lg w-100 py-3 hero-gradient">Comprar Ahora</button>
                     </div>
                 </div>
             </article>
-            <article class="col-12 col-md-4">
-                <div class="card product-card border-0 shadow-sm h-100">
-                    <img src="../assets/camisetaretrobrazil.jpg" class="card-img-top" alt="Brasil">
-                    <div class="card-body text-center">
-                        <h4 class="fs-5 fw-bold">Brasil</h4>
-                        <p class="text-primary fw-bold">$150 USD</p>
-                        <button class="btn btn-buy w-100">Comprar</button>
-                    </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="row g-4 h-100">
+                <div class="col-12">
+                    <article class="card product-card border-0 shadow-sm h-100 flex-row align-items-center p-3">
+                        <div class="img-container bg-light w-40 p-2 rounded-3" style="height: 120px;">
+                            <img src="../assets/camisetaretroalemania.jpeg" class="img-fluid h-100 object-fit-contain" alt="Alemania">
+                        </div>
+                        <div class="card-body w-60 py-0">
+                            <h4 class="fs-6 fw-bold mb-1">Alemania 1990</h4>
+                            <p class="text-primary fw-bold mb-2">$100 USD</p>
+                            <button class="btn btn-outline-dark btn-sm w-100">Ver más</button>
+                        </div>
+                    </article>
                 </div>
-            </article>
-            <article class="col-12 col-md-4">
-                <div class="card product-card border-0 shadow-sm h-100">
-                    <img src="../assets/camisetaretroargentinamaradona.jpg" class="card-img-top" alt="Argentina">
-                    <div class="card-body text-center">
-                        <h4 class="fs-5 fw-bold">Argentina</h4>
-                        <p class="text-primary fw-bold">$140 USD</p>
-                        <button class="btn btn-buy w-100">Comprar</button>
-                    </div>
+                <div class="col-12">
+                    <article class="card product-card border-0 shadow-sm h-100 flex-row align-items-center p-3">
+                        <div class="img-container bg-light w-40 p-2 rounded-3" style="height: 120px;">
+                            <img src="../assets/camisetaretrobrazil.jpg" class="img-fluid h-100 object-fit-contain" alt="Brasil">
+                        </div>
+                        <div class="card-body w-60 py-0">
+                            <h4 class="fs-6 fw-bold mb-1">Brasil 1970</h4>
+                            <p class="text-primary fw-bold mb-2">$150 USD</p>
+                            <button class="btn btn-outline-dark btn-sm w-100">Ver más</button>
+                        </div>
+                    </article>
                 </div>
-            </article>
+            </div>
         </div>
     </section>
 </main>
 
 <footer class="footer py-5 text-white bg-dark">
-    <div class="container text-center">
-        <h2 class="fw-bold">Retro Play</h2>
-        <ul class="list-unstyled d-flex justify-content-center gap-3 my-3">
-            <li><a href="../index.html" class="text-white text-decoration-none opacity-75">Inicio</a></li>
-            <li><a href="./camisetas.html" class="text-white text-decoration-none opacity-75">Camisetas</a></li>
-            <li><a href="./botines.html" class="text-white text-decoration-none opacity-75">Botines</a></li>
-        </ul>
-        <div class="social-links d-flex justify-content-center gap-4 mt-4">
-            <a href="#"><img src="../assets/instagram.png" alt="IG" width="30"></a>
-            <a href="#"><img src="../assets/whatsapp.png" alt="WS" width="30"></a>
-            <a href="#"><img src="../assets/tik-tok.png" alt="TK" width="30"></a>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                <h2 class="fw-bold m-0">Retro Play</h2>
+                <p class="small opacity-50 mt-2">Réplicas premium para amantes del fútbol.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="social-links d-flex justify-content-center gap-4">
+                    <a href="#"><img src="../assets/instagram.png" alt="IG" width="28"></a>
+                    <a href="#"><img src="../assets/whatsapp.png" alt="WS" width="28"></a>
+                    <a href="#"><img src="../assets/tik-tok.png" alt="TK" width="28"></a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-end gap-3 mb-0">
+                    <li><a href="../index.html" class="text-white text-decoration-none small opacity-75">Inicio</a></li>
+                    <li><a href="./botines.html" class="text-white text-decoration-none small opacity-75">Botines</a></li>
+                    <li><a href="./soporte.html" class="text-white text-decoration-none small opacity-75">Soporte</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

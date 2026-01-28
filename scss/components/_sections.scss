@@ -1,0 +1,28 @@
+/* scss/_sections.scss */
+.product-card {
+  height: 100%; // Hace que todas las cards de una fila midan lo mismo
+  display: flex;
+  flex-direction: column;
+
+  .img-container {
+    height: 250px; // Altura fija para que todas las fotos se alineen
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd; 
+    padding: 15px;
+
+    img {
+      max-height: 100%;
+      width: auto;
+      object-fit: contain; // Evita que la foto se estire feo
+    }
+  }
+
+  .card-body {
+    flex-grow: 1; // Empuja el botón hacia abajo para que queden alineados
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
