@@ -1,5 +1,4 @@
 /* scss/main.scss */
-/* scss/abstracts/_mixins.scss */
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +24,40 @@ header .navbar {
     background-position: 0% 50%;
   }
 }
-/* scss/main.scss */
-/* scss/_sections.scss */
-.product-card img {
-  transition: all 0.5s ease-in-out;
+/* scss/components/_sections.scss */
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  transition: transform 0.3s ease;
+}
+.product-card .img-container {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  overflow: hidden;
+  padding: 15px;
+}
+.product-card .img-container img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+.product-card .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
-

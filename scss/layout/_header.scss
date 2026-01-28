@@ -1,5 +1,5 @@
 /* scss/_header.scss */
-@use "variables" as vars;
+@use "../abstracts/variables" as vars;
 
 header {
   .navbar {

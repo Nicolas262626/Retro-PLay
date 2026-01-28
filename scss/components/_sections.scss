@@ -1,28 +1,34 @@
-/* scss/_sections.scss */
+/* scss/components/_sections.scss */
+@use "../abstracts/variables" as vars;
+
 .product-card {
-  height: 100%; // Hace que todas las cards de una fila midan lo mismo
-  display: flex;
-  flex-direction: column;
-
-  .img-container {
-    height: 250px; // Altura fija para que todas las fotos se alineen
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdfdfd; 
-    padding: 15px;
-
-    img {
-      max-height: 100%;
-      width: auto;
-      object-fit: contain; // Evita que la foto se estire feo
-    }
-  }
-
-  .card-body {
-    flex-grow: 1; // Empuja el botón hacia abajo para que queden alineados
+    height: 100%; // Hace que todas las cards de una fila midan lo mismo
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
+    border: none;
+    transition: transform 0.3s ease;
+
+    // Contenedor de la imagen para asegurar uniformidad
+    .img-container {
+        height: 250px; // Altura fija obligatoria para todas las imágenes
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8; // Fondo suave para resaltar el producto
+        overflow: hidden;
+        padding: 15px;
+
+        img {
+            max-height: 100%; // La imagen no se sale del contenedor
+            width: auto;
+            object-fit: contain; // Mantiene la proporción sin estirar la foto
+        }
+    }
+
+    .card-body {
+        flex-grow: 1; // Empuja el contenido para que los botones queden alineados abajo
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
